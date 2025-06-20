@@ -1,0 +1,90 @@
+{
+  "categories": [
+    "protein",
+    "vitamins",
+    "preworkout",
+    "recovery"
+  ],
+  "supplements": [
+    {
+      "id": "1",
+      "name": "Whey Protein Isolate",
+      "description": "High-quality protein powder for muscle building and recovery",
+      "price": 49.99,
+      "imageName": "protein1",
+      "category": "protein"
+    },
+    {
+      "id": "2",
+      "name": "Creatine Monohydrate",
+      "description": "Pure creatine for strength and power gains",
+      "price": 24.99,
+      "imageName": "creatine1",
+      "category": "preworkout"
+    },
+    {
+      "id": "3",
+      "name": "Vitamin D3",
+      "description": "Essential vitamin for bone health and immune support",
+      "price": 19.99,
+      "imageName": "vitamin1",
+      "category": "vitamins"
+    },
+    {
+      "id": "4",
+      "name": "BCAA Powder",
+      "description": "Branched-chain amino acids for muscle recovery",
+      "price": 34.99,
+      "imageName": "bcaa1",
+      "category": "recovery"
+    },
+    {
+      "id": "5",
+      "name": "Pre-Workout Formula",
+      "description": "Energy and focus blend for intense workouts",
+      "price": 39.99,
+      "imageName": "preworkout1",
+      "category": "preworkout"
+    },
+    {
+      "id": "6",
+      "name": "Omega-3 Fish Oil",
+      "description": "Essential fatty acids for heart and brain health",
+      "price": 29.99,
+      "imageName": "omega1",
+      "category": "vitamins"
+    },
+    {
+      "id": "7",
+      "name": "Casein Protein",
+      "description": "Slow-digesting protein for overnight muscle repair",
+      "price": 44.99,
+      "imageName": "protein2",
+      "category": "protein"
+    },
+    {
+      "id": "8",
+      "name": "Glutamine Powder",
+      "description": "Amino acid for gut health and recovery",
+      "price": 27.99,
+      "imageName": "glutamine1",
+      "category": "recovery"
+    },
+    {
+      "id": "9",
+      "name": "Multivitamin Complex",
+      "description": "Complete daily vitamin and mineral support",
+      "price": 22.99,
+      "imageName": "multivitamin1",
+      "category": "vitamins"
+    },
+    {
+      "id": "10",
+      "name": "Beta-Alanine",
+      "description": "Carnosine precursor for endurance and performance",
+      "price": 18.99,
+      "imageName": "beta1",
+      "category": "preworkout"
+    }
+  ]
+} 

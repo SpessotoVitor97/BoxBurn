@@ -1,0 +1,55 @@
+/* Home */
+"tab_home" = "Início";
+"home_search_placeholder" = "Buscar suplementos...";
+"home_featured_title" = "Destaques";
+"home_all_supplements" = "Todos os suplementos";
+
+/* Categories */
+"category_all" = "Todos";
+"category_protein" = "Proteína";
+"category_vitamins" = "Vitaminas";
+"category_preworkout" = "Pré-treino";
+"category_recovery" = "Recuperação";
+
+/* Buy/Cart/Checkout */
+"buy_button" = "Comprar";
+"buy_now_button" = "Comprar agora";
+"added_to_cart" = "Adicionado ao carrinho";
+"cart_title" = "Carrinho";
+"cart_empty_title" = "Seu carrinho está vazio";
+"cart_empty_subtitle" = "Adicione suplementos para começar!";
+"cart_start_shopping" = "Começar compras";
+"cart_items_title" = "Itens no carrinho";
+"cart_order_summary_title" = "Resumo do pedido";
+"cart_shipping_free" = "Grátis";
+"cart_proceed_to_checkout" = "Finalizar compra";
+"cart_decrement" = "Diminuir quantidade";
+"cart_increment" = "Aumentar quantidade";
+"cart_quantity" = "Quantidade: %d";
+"cart_remove" = "Remover do carrinho";
+
+/* Favorites */
+"tab_favorites" = "Favoritos";
+"favorites_title" = "Favoritos";
+"favorites_empty_title" = "Nenhum favorito ainda";
+"favorites_empty_subtitle" = "Seus suplementos favoritos aparecerão aqui.";
+
+/* Settings */
+"tab_settings" = "Configurações";
+"settings_title" = "Configurações";
+"settings_coming_soon" = "Página de configurações em breve...";
+
+/* Side Menu */
+"side_menu_welcome" = "Bem-vindo!";
+"side_menu_guest_user" = "Usuário convidado";
+"side_menu_search_placeholder" = "Buscar suplementos...";
+
+/* Supplement Detail */
+"detail_rating" = "Avaliação";
+"detail_add_to_cart" = "Adicionar ao carrinho";
+"detail_buy_now" = "Comprar agora";
+
+/* Payment */
+"payment_title" = "Pagamento";
+"payment_processing_soon" = "Processamento de pagamento em breve...";
+"payment_back_to_cart" = "Voltar ao carrinho"; 
