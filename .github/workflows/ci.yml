@@ -21,11 +21,15 @@ jobs:
         uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: ${{ matrix.xcode }}
-      - name: Build for Simulator/Device
+      - name: Get Xcode Version
+        id: xcode_version
+        run: echo "version=$(xcodebuild -version | head -n 1 | awk '{print $2}')" >> $GITHUB_OUTPUT
+      - name: Build for Simulator/Device (dynamic Xcode version)
         run: |
-          if [[ "${{ matrix.xcode }}" == "16.2" && "${{ matrix.device }}" == "iphone15" ]]; then
+          XCODE_VERSION="${{ steps.xcode_version.outputs.version }}"
+          if [[ "$XCODE_VERSION" == "16.2" && "${{ matrix.device }}" == "iphone15" ]]; then
             xcodebuild build -scheme BoxBurnSuplements -destination 'platform=iOS Simulator,name=iPhone 15' | xcpretty
-          elif [[ "${{ matrix.xcode }}" != "16.2" && "${{ matrix.device }}" == "iphone16" ]]; then
+          elif [[ "$XCODE_VERSION" != "16.2" && "${{ matrix.device }}" == "iphone16" ]]; then
             xcodebuild build -scheme BoxBurnSuplements -destination 'platform=iOS Simulator,name=iPhone 16' | xcpretty
           elif [[ "${{ matrix.device }}" == "generic-ios" ]]; then
             xcodebuild build -scheme BoxBurnSuplements -destination 'generic/platform=iOS Simulator' | xcpretty
@@ -48,11 +52,15 @@ jobs:
         uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: ${{ matrix.xcode }}
-      - name: Run Unit Tests
+      - name: Get Xcode Version
+        id: xcode_version
+        run: echo "version=$(xcodebuild -version | head -n 1 | awk '{print $2}')" >> $GITHUB_OUTPUT
+      - name: Run Unit Tests (dynamic Xcode version)
         run: |
-          if [[ "${{ matrix.xcode }}" == "16.2" && "${{ matrix.device }}" == "iphone15" ]]; then
+          XCODE_VERSION="${{ steps.xcode_version.outputs.version }}"
+          if [[ "$XCODE_VERSION" == "16.2" && "${{ matrix.device }}" == "iphone15" ]]; then
             xcodebuild test -scheme BoxBurnSuplements -destination 'platform=iOS Simulator,name=iPhone 15' -enableCodeCoverage YES | xcpretty
-          elif [[ "${{ matrix.xcode }}" != "16.2" && "${{ matrix.device }}" == "iphone16" ]]; then
+          elif [[ "$XCODE_VERSION" != "16.2" && "${{ matrix.device }}" == "iphone16" ]]; then
             xcodebuild test -scheme BoxBurnSuplements -destination 'platform=iOS Simulator,name=iPhone 16' -enableCodeCoverage YES | xcpretty
           fi
       - name: Upload Coverage Artifacts
@@ -72,6 +80,9 @@ jobs:
         uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: latest
+      - name: Get Xcode Version
+        id: xcode_version
+        run: echo "version=$(xcodebuild -version | head -n 1 | awk '{print $2}')" >> $GITHUB_OUTPUT
       - name: Download Coverage Artifacts
         uses: actions/download-artifact@v4
         with:
