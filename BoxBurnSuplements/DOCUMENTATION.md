@@ -15,6 +15,14 @@ BoxBurnSuplements is a modern iOS app for discovering, searching, and purchasing
 
 ---
 
+## CI/CD & Release Process
+- **CI/CD**: Automated via [GitHub Actions](https://github.com/SpessotoVitor97/BoxBurn/actions) ![CI](https://github.com/SpessotoVitor97/BoxBurn/actions/workflows/ci.yml/badge.svg)
+- **Matrix builds**: Multiple Xcode versions (16.2, latest) and devices (iPhone 15, iPhone 16, generic iOS, generic iPhone)
+- **Tests & Coverage**: All tests run in CI, with coverage summary and full report posted in logs
+- **Release Notes**: See [RELEASE_NOTES.md](RELEASE_NOTES.md) for the latest features and changes
+
+---
+
 ## Detailed Architecture
 
 ### Clean Architecture Layers

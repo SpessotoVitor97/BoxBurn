@@ -1,5 +1,7 @@
 # BoxBurnSuplements
 
+![CI](https://github.com/SpessotoVitor97/BoxBurn/actions/workflows/ci.yml/badge.svg)
+
 BoxBurnSuplements is a modern iOS app for discovering, searching, and purchasing supplements, built with Swift, SwiftUI, Combine, and Clean Architecture principles.
 
 ## Features
@@ -27,6 +29,12 @@ BoxBurnSuplements is a modern iOS app for discovering, searching, and purchasing
 ## Running Tests & Coverage
 - Tests use [SwiftTesting](https://github.com/apple/swift-testing) (Swift 5.9+)
 - Coverage: Enable in scheme, view in Xcode Test Navigator (pie chart)
+- **CI:** All tests and coverage are run on GitHub Actions (see badge above)
+- Coverage summary and full report are posted in CI logs
+
+## Release Notes & CI
+- See [RELEASE_NOTES.md](RELEASE_NOTES.md) for the latest features and changes
+- CI/CD: Automated builds, tests, and coverage for multiple Xcode/device combos via GitHub Actions
 
 ## Localization
 - All user-facing strings are localized (PT-BR default)
